@@ -1,0 +1,4 @@
+syntax: glob
+# This is intionally very sparse since this repo is meant to contain test data
+
+*.nupkg
