@@ -15,3 +15,10 @@ The datasets are provided under the original terms that Microsoft received such 
 
 > More information: https://www.cs.toronto.edu/~kriz/cifar.html
 
+### SqueezeNet
+
+> Originally released in 2016,  developed by researchers at DeepScale, University of California, Berkeley, and Stanford University.
+>
+> More information: https://en.wikipedia.org/wiki/SqueezeNet, https://github.com/onnx/models/tree/master/squeezenet
+
+
