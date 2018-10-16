@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata minClientVersion="2.8.1">
+    <id>Microsoft.ML.TestModels</id>
+    <version>0.0.1-test</version>
+    <title>Test model files for Microsoft.ML tests</title>
+    <authors>Microsoft</authors>
+    <owners>Microsoft</owners>
+    <licenseUrl>https://github.com/dotnet/machinelearning/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://dot.net/ml</projectUrl>
+    <iconUrl>https://dot.net/ml</iconUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <description>This package provides test model files for Microsoft.ML tests.</description>
+    <summary>Provides test model files for the Microsft.ML tests.</summary>
+    <copyright>Copyright © Microsoft Corporation</copyright>
+    <tags>Microsoft.ML TestData</tags>
+    <contentFiles>
+      <files include="**/*" buildAction="None" copyToOutput="true" />
+    </contentFiles>
+  </metadata>
+  <files>
+    <file src="Microsoft.ML.TestModels\**\*" target="contentFiles\any\any" />
+  </files>
+</package>
