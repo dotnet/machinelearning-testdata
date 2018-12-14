@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata minClientVersion="2.8.1">
     <id>Microsoft.ML.Onnx.TestModels</id>
-    <version>0.0.3-test</version>
+    <version>0.0.4-test</version>
     <title>Test data for Microsoft.ML Onnx tests</title>
     <authors>Microsoft</authors>
     <owners>Microsoft</owners>
