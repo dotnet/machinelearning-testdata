@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata minClientVersion="2.8.1">
     <id>Microsoft.ML.TensorFlow.TestModels</id>
-    <version>0.0.6-test</version>
+    <version>0.0.7-test</version>
     <title>Test data for Microsoft.ML TensorFlow tests</title>
     <authors>Microsoft</authors>
     <owners>Microsoft</owners>
