@@ -3,7 +3,7 @@
 This model is based on the following TensorFlow model. It was built with version 1.12.0.
 https://github.com/tensorflow/models/tree/master/research/sentiment_analysis
 
-The following lines of code needed after the training and evaluation code (but before session is closed) so that model can be saved in [SavedModel(https://www.tensorflow.org/guide/saved_model) format together with word index `imdb_word_index.csv`.
+The following lines of code needed after the training and evaluation code (but before session is closed) so that model can be saved in [SavedModel](https://www.tensorflow.org/guide/saved_model) format together with word index `imdb_word_index.csv`.
 
 ``` python
 tf.saved_model.simple_save(
