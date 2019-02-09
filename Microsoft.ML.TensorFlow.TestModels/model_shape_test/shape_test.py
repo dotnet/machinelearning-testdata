@@ -1,21 +1,21 @@
 import tensorflow as tf
 
-
+OneDim = tf.placeholder(dtype=tf.float32, shape=[None], name="OneDim")
 TwoDim = tf.placeholder(dtype=tf.float32, shape=[2, None], name="TwoDim")
 ThreeDim = tf.placeholder(dtype=tf.float32, shape=[1, None,2], name="ThreeDim")
 FourDim = tf.placeholder(dtype=tf.float32, shape=[1, None, None, 3], name="FourDim")
 FourDimKnown = tf.placeholder(dtype=tf.float32, shape=[2, 2, 2, 2], name="FourDimKnown")
 
-inputs = {'TwoDim':TwoDim, 'ThreeDim':ThreeDim,
+inputs = {'OneDim':OneDim, 'TwoDim':TwoDim, 'ThreeDim':ThreeDim,
          'FourDim':FourDim, 'FourDimKnown':FourDimKnown}
          
-
+o_OneDim = tf.reshape(OneDim, shape=[1, -1], name="o_OneDim")
 o_TwoDim = tf.identity(TwoDim, name="o_TwoDim")
 o_ThreeDim = tf.identity(ThreeDim, name="o_ThreeDim")
 o_FourDim = tf.identity(FourDim, name="o_FourDim")
 o_FourDimKnown = tf.identity(FourDimKnown, name="o_FourDimKnown")
 
-outputs = {'o_TwoDim':o_TwoDim, 'o_ThreeDim':o_ThreeDim,
+outputs = {'o_OneDim':o_OneDim, 'o_TwoDim':o_TwoDim, 'o_ThreeDim':o_ThreeDim,
          'o_FourDim':o_FourDim, 'o_FourDimKnown':o_FourDimKnown}
          
 # Add an op to initialize the variables.
